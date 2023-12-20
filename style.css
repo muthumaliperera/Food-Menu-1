@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ /*background: linear-gradient(to right, rgba(255, 163, 127, 1), rgba(255, 163, 127, 0.5)), url('8.png');*/
+body{
+    background: 
+    linear-gradient(to top, rgba(64, 40, 29, 0.9), rgba(199, 136, 112, 0.553)),
+    url('9a.png') left,
+    url('8.png') right;
+  background-size: auto, contain, contain;
+  background-repeat: no-repeat;
+  height: 100vh; /* Set the height to fit the screen */
+  width: 100%;
+  
+}
+.title{
+   font-weight: bold;
+   font-size: 40px;color: rgb(255, 255, 255);
+   margin-top: 150px;
+    
+}
+.container{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    /*
+    
+    justify-content:center;*/
+    text-align: center;
+    font-family: 'poppins';
+    color: rgb(71, 71, 71);
+    font-size: 15px;
+    font-weight: 500;
+    min-height: 100vh;
+}
+
+#menuTable{
+    margin-top:20px;
+    width: 800px;
+    table-layout: fixed;
+    padding: 0px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-spacing: 0;
+    border-collapse: separate;
+    border-radius: 10px;
+    --border: 1px solid rgba(169, 169, 169, 0.392);
+
+    border: var(--border);
+    overflow: hidden;
+}
+td{
+    text-align: center;
+}
+#menuTable td:not(:last-child){
+    border-right:var(--border) ;
+}
+
+#menuTable tbody tr:not(:last-child) td {
+    border-bottom: var(--border);
+  }
+tr{
+    border: 1px;
+}
+tr:nth-child(1){
+    height: 40px;
+    font-size: 15px;
+    background-color: rgba(169, 169, 169, 0.392);
+    font-weight: bold;
+ }
+ tr:last-child{
+    height: 40px;
+    font-size: 15px;
+    background-color: rgba(255, 106, 0, 0.103);
+    font-weight: bold;
+ }
+ /*
+.No{
+    width:50px;
+}
+.Itemimage{
+    width: 50px;
+}
+
+.item-name{
+    width: 200px;
+}
+.Price{
+    width: 200px;
+}
+.Quantity{
+    width: 100px;
+}
+.Total{
+    width:200px;
+}
+*/
+.Itemimage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  
+}
+.add, .remove{
+    display: block;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: 2px;
+    float: right;
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+    border: var(--border);
+    border-radius: 20px;
+    background-color: rgba(248, 194, 173, 0);
+    color: rgb(51, 51, 51);
+    cursor: pointer;
+
+}
+.add:hover, .remove:hover{
+    background-color: white;
+    color: rgb(158, 99, 76);
+}
+.quantity{
+    align-items: center;
+    vertical-align: middle;
+}
+.quantity span{
+    display: block;
+    
+}
+
