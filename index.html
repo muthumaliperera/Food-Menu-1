@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="title">Menu</div>
+    
+    <table id="menuTable">
+      <colgroup>
+        <col style="width: 50px;">
+        <col style="width: 50px;">
+        <col style="width: 200px;">
+        <col style="width: 100px;">
+        <col style="width: 100px;">
+        <col style="width: 200px;">
+    </colgroup>
+      <tr>
+        <td class="No">No.</td>
+        <td class="itemimage">Item</td>
+        <td class="item-name">Item name</td>
+        <td class="price">Price</td>
+        <td class="quantity">Qty</td>
+        <td class="total">Total</td>
+      </tr>
+      <!--Item1-->
+      <tr>
+        <td>1</td>
+        <td class="Itemimage"><img src="1.jfif" alt="Item Image"></td>
+        <td class="item-name">Ramen</td>
+        <td class="price">2200.00</td>
+        <td class="quantity">
+          <span>0</span>
+
+          <button class="add">+</button>
+          
+          <button class="remove">-</button>
+        </td>
+        <td class="total">0</td>
+      </tr>
+      <!--Item2-->
+      <tr>
+        <td>2</td>
+        <td class="Itemimage">
+          <img src="2.jfif" alt="Item Image">
+        </td>
+        <td class="item-name">Spring Rolls</td>
+        <td class="price">1200.00</td>
+        <td class="quantity">
+          <span>0</span>
+          
+          <button class="add">+</button>
+          
+          <button class="remove">-</button>
+        </td>
+        <td class="total">0</td>
+      </tr>
+      <!--Item3-->
+      <tr>
+        <td>3</td>
+        <td class="Itemimage">
+          <img src="3.jfif" alt="Item Image">
+        </td>
+        <td class="item-name">Noodle Soup</td>
+        <td class="price">3500.00</td>
+        <td class="quantity">
+          <span>0</span>
+          
+          <button class="add">+</button>
+          
+          <button class="remove">-</button>
+        </td>
+        <td class="total">0</td>
+      </tr>
+      <!--Item4-->
+      <tr>
+        <td>4</td>
+        <td class="Itemimage">
+          <img src="4.jfif" alt="Item Image">
+        </td>
+        <td class="item-name">Stew</td>
+        <td class="price">1800.00</td>
+        <td class="quantity">
+          <span>0</span>
+          
+          <button class="add">+</button>
+          
+          <button class="remove">-</button>
+        </td>
+        <td class="total">0</td>
+      </tr>
+
+      <tr id="totalRow">
+        <td colspan="4">Total</td>
+        <td id="overallQuantity">0</td>
+        <td id="overallTotal">0</td>
+      </tr>
+    </table>
+  </div>
+ <script src="script.js"></script>
+ 
+ 
+</body>
+</html>
